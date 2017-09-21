@@ -2,27 +2,18 @@
 layout: page
 title: "关于：About"
 ---
-Welcome to visit my blog!
+Welcome to my blog!
 
 #### 1.Personal Info
-Name: Xuewen Pan(潘学文)  
-Gender: Male  
-City: Wuhan, China  
-Career: Software developer(Android&Linux&Web)  
+Name: Front Ng(吴志锋)	
+Gender: Male
+City: ZhuHai, China	
+Career: Software developer(Java&Linux&Web)	
 
 #### 2.My Links
-Blog: <http://www.panxw.com>  
-GitHub: <https://github.com/panxw>  
-LinkedIn: <http://www.linkedin.com/in/panxw>  
-
+Blog: <http://frontng.github.io>	
+GitHub: <https://github.com/frontng>	
+WeiBo: <http://www.weibo.com/af8991>	
 
 #### 3.Contract
-Email: winfirm#163.com  
-QQ: 85902258  
-
-### 4.Domain For Sale
-danbaili.com  
-fangxinyu.com  
-maicaiwa.com  
-babytoycar.com  
-youth168.com  
+Email: af8991#gmail.com
