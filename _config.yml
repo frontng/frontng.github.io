@@ -1,31 +1,43 @@
+# Site settings
+title: Jekyll-Uno
+description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/jekyll-uno'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Josh Gerdes'
+  email: josh@joshgerdes.com
+  twitter_username: joshgerdes
+  facebook_username: joshgerdes
+  github_username:  joshgerdes
+  linkedin_username:  joshgerdes
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
-highlighter: pygments
-permalink: /posts/:title.html
-excerpt_separator: "<!-- more -->"
+highlighter: rouge
 
-github: frontng
-author: "Front Ng"
-email: winfirm#163.com
-name: "潘学文个人博客"
-url: http://frontng.github.io
-domain: frontng.github.io
-all_categories: [
-["android", "Android开发","/posts/android.html"], 
-["program", "软件编程","/posts/program.html"],
-["web", "Web建站","/posts/web.html"], 
-["linux", "Linux相关","/posts/linux.html"],
-["read", "读书笔记","/posts/read.html"], 
-["other", "杂记","/posts/other.html"],
-["about", "关于","/about.html"]
-]
+sass:
+    sass_dir: _sass
+    style: compressed
 
-paginate: 8
-paginate_path: "posts/page:num"
-timezone: America/Los_Angeles
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-collections:
-  docs:
-    output: true
-
-gems:
- - jekyll-paginate
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

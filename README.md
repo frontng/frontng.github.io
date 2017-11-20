@@ -1,22 +1,45 @@
-Jekyll博客模板
-================
+# jekyll-uno
 
-#### 1.浏览
-http://www.panxw.com, 支持PC与智能机访问。  
+Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
-#### 2.模板使用
-修改_config.yml与_includes目录下相关文件进行配置。  
-模板可任意使用，但请保留本站**友情链接**。  
+> :warning:
+  This theme requires ruby and rubygems installed
 
-#### 3.联系作者
-Email: winfirm(#)163.com  
-QQ交流群: 168563980  
+### Features
 
-#### 4.赞助
-想给作者予以鼓励？欢迎打赏吧。  
-支付宝:  
-<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_alipay.jpg"/>
+* Clean layout
+* Resposive layout
+* Pagination
+* Syntax highlighting
+* Social links
+* Tags listing page
+* Categories listing page
+* Google Analytics integration
+* Disqus integration
 
-微信:  
-<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_weixin.jpg"/>
+---
 
+### Install and Test
+
+1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
+2. Enter the folder: `cd jekyll-uno/`
+3. If you don't have bundler installed: `gem install bundler`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `bundle exec jekyll serve --watch`
+
+Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+
+---
+
+### Demo and Download
+
+[Demo](http://joshgerdes.com/jekyll-uno/)
+[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+
+![jekyll-uno - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).

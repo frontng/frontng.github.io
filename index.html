@@ -1,44 +1,30 @@
 ---
-layout: index
-title: "Front Ng Blog"
+layout: default
+robots: noindex
 ---
 
-<!-- Loop output paged posts -->
-{% for post in paginator.posts %}
-<h2>
-  <a href="{{ post.url }}">
-    {{ post.title }}
-  </a> 
-  <div class="post-date">
-	<span class="glyphicon glyphicon-time"></span>
-	{{ post.date | date:"%Y-%m-%d" }}
-  </div>
-</h2>
-<hr>
-{{ post.excerpt }}
-	<p><h3><a href="{{ post.url }}">阅读全文 &raquo;</a></h3></p>
-<hr>
-{% endfor %}
+<div class="main-post-list">
 
-<!-- Pager indicator -->
-<ul class="pager">
-  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-  <li class="previous">
-    <a href="/">
-      &larr; 上一页
-    </a>
-  </li>
-  {% else %}
-  <li class="previous">
-    <a href="/posts/page{{ paginator.previous_page }}/index.html">
-      &larr; 上一页
-    </a>
-  </li>
-  {% endif %} {% endif %} {% if paginator.next_page %}
-  <li class="next">
-    <a href="/posts/page{{ paginator.next_page }}/index.html">
-      下一页 &rarr;
-    </a>
-  </li>
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
+        <div class="post-list__meta">
+            <time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
+            {% if post.tags.size > 0 %}
+            &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+            {% endif %}
+        </div>
+        <hr class="post-list__divider">
+      </li>
+    {% endfor %}
+  </ol>
+
+  <hr class="post-list__divider ">
+
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
   {% endif %}
-</ul>
+
+</div>
