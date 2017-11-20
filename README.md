@@ -27,13 +27,13 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `bundle exec jekyll serve --watch`
 
-Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
+Access via: [https://localhost:4000/jekyll-uno/](https://localhost:4000/jekyll-uno/)
 
 ---
 
 ### Demo and Download
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
+[Demo](https://joshgerdes.com/jekyll-uno/)
 [Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
 
 ![jekyll-uno - free Jekyll theme](/screenshot.png)

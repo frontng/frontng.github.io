@@ -1,7 +1,7 @@
 /* TEAM */
 Developer & Designer: Josh Gerdes
 Twitter: @joshgerdes
-Site: http://joshgerdes.com
+Site: https://joshgerdes.com
 Location: Minneapolis, MN, USA
 						
 /* THANKS */
