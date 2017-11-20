@@ -1,6 +1,6 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+title: Front Ng
+description: 'A Program Designer & GoPro Photographer'
 url: 'https://frontng.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
@@ -8,7 +8,7 @@ baseurl: '/'
 
 author:
   name: 'Front Ng'
-  email: af8991@google.com
+  email: af8991@gmail.com
   twitter_username: af8991
   facebook_username: af8991 
   github_username:  FrontNg
